@@ -1244,3 +1244,119 @@ LogConfig: Set CVar [[r.VRS.ContrastAdaptiveShading:1]]
 [2025.10.23-08.55.19:750][  0]LogPython: Python enabled via CVar 'Engine.Python.IsEnabledByDefault'
 [2025.10.23-08.55.19:750][  0]LogPython: Using Python 3.11.8
 [2025.10.23-08.55.19:774][  0]LogPython: Running python command: python -m venv "C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall"
+[2025.10.23-08.55.23:774][  0]LogPython: Running python command: python -c "import pkg_resources;dist=pkg_resources.working_set.find(pkg_resources.Requirement.parse('ue-pipinstall-utils'));exit(dist.version!='0.1.5' if dist is not None else 1)"
+[2025.10.23-08.55.24:352][  0]LogPython: Running python command: python -m pip install --upgrade --no-index --find-links "C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/Lib/wheels" -r "C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/PipInstallUtils/requirements.txt" ue-pipinstall-utils==0.1.5
+[2025.10.23-08.55.25:281][  0]LogPython: Looking in links: c:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/Lib/wheels
+[2025.10.23-08.55.25:323][  0]LogPython: Processing c:\jeux\fortnite\nains\ue_5.6\engine\plugins\experimental\pythonscriptplugin\content\python\lib\wheels\ue_pipinstall_utils-0.1.5-py3-none-any.whl
+[2025.10.23-08.55.25:323][  0]LogPython: Processing c:\jeux\fortnite\nains\ue_5.6\engine\plugins\experimental\pythonscriptplugin\content\python\lib\wheels\pip_requirements_parser-32.0.1-py3-none-any.whl (from -r C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/PipInstallUtils/requirements.txt (line 1))
+[2025.10.23-08.55.25:323][  0]LogPython: Processing c:\jeux\fortnite\nains\ue_5.6\engine\plugins\experimental\pythonscriptplugin\content\python\lib\wheels\pyparsing-3.1.1-py3-none-any.whl (from -r C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/PipInstallUtils/requirements.txt (line 2))
+[2025.10.23-08.55.25:323][  0]LogPython: Processing c:\jeux\fortnite\nains\ue_5.6\engine\plugins\experimental\pythonscriptplugin\content\python\lib\wheels\packaging-23.1-py3-none-any.whl (from -r C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/PipInstallUtils/requirements.txt (line 3))
+[2025.10.23-08.55.25:334][  0]LogPython: Processing c:\jeux\fortnite\nains\ue_5.6\engine\plugins\experimental\pythonscriptplugin\content\python\lib\wheels\wheel-0.38.4-py3-none-any.whl (from -r C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/PipInstallUtils/requirements.txt (line 4))
+[2025.10.23-08.55.25:365][  0]LogPython: Installing collected packages: wheel, pyparsing, packaging, pip-requirements-parser, ue-pipinstall-utils
+[2025.10.23-08.55.25:533][  0]LogPython: Successfully installed packaging-23.1 pip-requirements-parser-32.0.1 pyparsing-3.1.1 ue-pipinstall-utils-0.1.5 wheel-0.38.4
+[2025.10.23-08.55.25:575][  0]LogPython: Running python command: python -m ue_parse_plugin_reqs  -vv "C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.in" "C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.txt"
+[2025.10.23-08.55.25:915][  0]LogPython: Running python command: python -m pip install --disable-pip-version-check --only-binary=:all: --require-hashes -r "C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.txt"
+[2025.10.23-08.55.26:752][  0]LogPython: Collecting opencv-python==4.5.5.62 (from -r C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.txt (line 1))
+[2025.10.23-08.55.26:752][  0]LogPython:   Using cached opencv_python-4.5.5.62-cp36-abi3-win_amd64.whl (35.4 MB)
+[2025.10.23-08.55.27:021][  0]LogPython: Collecting numpy==1.24.4 (from -r C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.txt (line 2))
+[2025.10.23-08.55.27:021][  0]LogPython:   Using cached numpy-1.24.4-cp311-cp311-win_amd64.whl (14.8 MB)
+[2025.10.23-08.55.27:065][  0]LogPython: WARNING: The candidate selected for download or install is a yanked version: 'opencv-python' candidate (version 4.5.5.62 at https://files.pythonhosted.org/packages/65/d4/0f4b0f72687780e3b4662e4a5323736d6c534e6914508e6239914c8d8515/opencv_python-4.5.5.62-cp36-abi3-win_amd64.whl (from https://pypi.org/simple/opencv-python/) (requires-python:>=3.6))
+[2025.10.23-08.55.27:065][  0]LogPython: Reason for being yanked: deprecated, use 4.5.5.64
+[2025.10.23-08.55.27:107][  0]LogPython: Installing collected packages: numpy, opencv-python
+[2025.10.23-08.55.29:392][  0]LogPython: Successfully installed numpy-1.24.4 opencv-python-4.5.5.62
+[2025.10.23-08.55.29:455][  0]LogPython: Running python command: python -m ue_parse_plugin_reqs  -vv "C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.in" "C:/Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/PipInstall/merged_requirements.txt"
+[2025.10.23-08.55.30:064][  0]LogCUDA: Display: Initialising CUDA API...
+[2025.10.23-08.55.30:064][  0]LogCUDA: Display: CUDA API initialised successfully.
+[2025.10.23-08.55.30:064][  0]LogCUDA: Display: Found 1 CUDA capable devices.
+[2025.10.23-08.55.30:064][  0]LogCUDA: Display: Found device 0 called "NVIDIA GeForce RTX 4070 Laptop GPU".
+[2025.10.23-08.55.30:064][  0]LogCUDA: Display: Attempting to create CUDA context on GPU Device 0...
+[2025.10.23-08.55.30:147][  0]LogCUDA: Display: Created CUDA context on device "NVIDIA GeForce RTX 4070 Laptop GPU".
+[2025.10.23-08.55.30:147][  0]LogWindows: Failed to load 'amfrt64.dll' (GetLastError=126)
+[2025.10.23-08.55.30:147][  0]LogWindows: File 'amfrt64.dll' does not exist
+[2025.10.23-08.55.30:158][  0]LogRenderer: Requested compilation of Path Tracing RTPSOs (16 permutations).
+[2025.10.23-08.55.30:282][  0]LogVPUtilitiesEditor: VP Scouting subsystem initialized.
+[2025.10.23-08.55.30:847][  0]LogLevelSequenceEditor: LevelSequenceEditor subsystem initialized.
+[2025.10.23-08.55.31:399][  0]LogEditorDataStorage: Initializing
+[2025.10.23-08.55.31:402][  0]LogEditorDataStorage: Initialized
+[2025.10.23-08.55.31:424][  0]LogCore: Display: GameplayInsights module auto-connecting to local trace server...
+[2025.10.23-08.55.31:496][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2025.10.23-08.55.31:500][  0]SourceControl: Revision control is disabled
+[2025.10.23-08.55.31:500][  0]LogUnrealEdMisc: Loading editor; pre map load, took 33.986
+[2025.10.23-08.55.31:502][  0]Cmd: MAP LOAD FILE="../../../../../../../Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Content/Main.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=4
+[2025.10.23-08.55.31:505][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2025.10.23-08.55.31:505][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.10.23-08.55.31:531][  0]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.10.23-08.55.31:533][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2025.10.23-08.55.31:574][  0]LogAssetRegistry: Display: Triggering cache save on discovery complete
+[2025.10.23-08.55.31:596][  0]LogAudio: Display: Audio Device (ID: 1) registered with world 'Main'.
+[2025.10.23-08.55.31:596][  0]LogChaosDD: Creating Chaos Debug Draw Scene for world Main
+[2025.10.23-08.55.31:610][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2025.10.23-08.55.31:625][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2025.10.23-08.55.31:625][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2025.10.23-08.55.31:625][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,044ms to complete.
+[2025.10.23-08.55.31:633][  0]LogUnrealEdMisc: Total Editor Startup Time, took 34.119
+[2025.10.23-08.55.31:719][  0]LogPlacementMode: Display: The Asset Registry is not yet fully loaded so some placeable classes might be missing.
+[2025.10.23-08.55.31:819][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.10.23-08.55.31:874][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.10.23-08.55.31:930][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.10.23-08.55.31:986][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.10.23-08.55.32:056][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:056][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/StarterContent.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:056][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:056][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_FirstPerson.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:056][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:056][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_FirstPersonBP.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:057][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:057][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_HandheldARBP.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:057][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:057][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_ThirdPerson.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:057][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:058][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_ThirdPersonBP.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:058][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:058][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_TopDown.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:058][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:058][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_TopDownBP.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:058][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:058][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_VehicleAdvBP.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:058][  0]LogPakFile: Initializing PakPlatformFile
+[2025.10.23-08.55.32:058][  0]LogPakFile: Display: Mounted Pak file 'C:/jeux/fortnite/nains/UE_5.6/FeaturePacks/TP_VirtualRealityBP.upack', mount point: 'root:/'
+[2025.10.23-08.55.32:193][  0]LogSlate: Took 0.000156 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.10.23-08.55.32:198][  0]LogSlate: Took 0.000476 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.10.23-08.55.32:199][  0]LogSlate: Took 0.000326 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2025.10.23-08.55.32:308][  0]LogRenderer: Recreating Persistent SBTs due to initializer changes: 
+		NumShaderSlotsPerGeometrySegment changed: current: 1 - new: 2
+		NumGeometrySegments changed: current: 0 - new: 512
+[2025.10.23-08.55.32:502][  0]LogStall: Startup...
+[2025.10.23-08.55.32:505][  0]LogStall: Startup complete.
+[2025.10.23-08.55.32:510][  0]LogGameProjectGeneration: Project MyProject requires update. Plugin OpenXR SupportedTargetPlatforms value in project descriptor (Win64, Linux, Android) differs from value in plugin descriptor (Win64, Linux, LinuxArm64, Android) 
+[2025.10.23-08.55.32:510][  0]LogGameProjectGeneration: Project MyProject requires update. Plugin VirtualScouting SupportedTargetPlatforms value in project descriptor (Win64, Linux) differs from value in plugin descriptor (Win64) 
+[2025.10.23-08.55.32:510][  0]LogGameProjectGeneration: Project MyProject requires update. Plugin nDisplay SupportedTargetPlatforms value in project descriptor (Win64) differs from value in plugin descriptor (Win64, Linux) 
+[2025.10.23-08.55.32:511][  0]LogGameProjectGeneration: Project MyProject requires update. Plugin AppleARKit SupportedTargetPlatforms value in project descriptor (IOS) differs from value in plugin descriptor (IOS, Win64, Mac, Linux, Android) 
+[2025.10.23-08.55.32:511][  0]LogGameProjectGeneration: Project MyProject requires update. Plugin AppleARKitFaceSupport SupportedTargetPlatforms value in project descriptor (IOS) differs from value in plugin descriptor (IOS, Win64, Mac, Linux, Android) 
+[2025.10.23-08.55.32:531][  0]LogLoad: (Engine Initialization) Total time: 35.02 seconds
+[2025.10.23-08.55.32:804][  0]LogAssetRegistry: Display: Asset registry cache written as 105.5 MiB to ../../../../../../../Users/lilyw/OneDrive/Documents/unity/github/IronFlower/shadder_avec_jojo/MyProject/Intermediate/CachedAssetRegistry_*.bin
+[2025.10.23-08.55.32:834][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2025.10.23-08.55.32:834][  0]LogCsvProfiler: Display: Metadata set : streamingpoolsizemb="1000"
+[2025.10.23-08.55.33:043][  0]LogSlate: Took 0.000105 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2025.10.23-08.55.33:098][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.10.23-08.55.33:099][  0]LogPython: Display: Running start-up script C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... started...
+[2025.10.23-08.55.33:122][  0]LogPython: registering <class 'ControlRigWorkflows.workflow_deformation_rig_preset.provider'>
+
+[2025.10.23-08.55.33:127][  0]LogPython: Display: Running start-up script C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/Animation/ControlRig/Content/Python/init_unreal.py... took 28.711 ms
+[2025.10.23-08.55.33:127][  0]LogPython: Display: Running start-up script C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/MovieScene/MovieRenderPipeline/Content/Python/init_unreal.py... started...
+[2025.10.23-08.55.33:130][  0]LogPython: Display: Running start-up script C:/jeux/fortnite/nains/UE_5.6/Engine/Plugins/MovieScene/MovieRenderPipeline/Content/Python/init_unreal.py... took 1.577 ms (total: 30.288 ms)
+[2025.10.23-08.55.33:348][  1]LogAssetRegistry: AssetRegistryGather time 0.8618s: AssetDataDiscovery 0.1669s, AssetDataGather 0.6122s, StoreResults 0.0827s. Wall time 28.5980s.
+	NumCachedDirectories 0. NumUncachedDirectories 1837. NumCachedFiles 0. NumUncachedFiles 8825.
+	BackgroundTickInterruptions 0.
+[2025.10.23-08.55.33:363][  1]LogPlacementMode: Display: The Asset Registry is done with its initial scan, the list of placeable classes has been updated.
+[2025.10.23-08.55.33:372][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000000 seconds (updated 0 objects)
+[2025.10.23-08.55.33:372][  1]LogStreaming: Display: FlushAsyncLoading(404): 1 QueuedPackages, 138 AsyncPackages
+[2025.10.23-08.55.33:381][  1]LogSourceControl: Uncontrolled asset discovery started...
+[2025.10.23-08.55.33:614][  4]LogSourceControl: Uncontrolled asset discovery finished in 0.23287 seconds (Found 8801 uncontrolled assets)
+[2025.10.23-08.55.34:105][  5]LogEOSSDK: LogEOS: SDK Config Platform Update Request Successful, Time: 15.548503
+[2025.10.23-08.55.34:106][  5]LogEOSSDK: LogEOSAnalytics: EOS SDK Analytics disabled for route [1].
+[2025.10.23-08.55.34:106][  5]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 15.880714
+[2025.10.23-08.55.35:439][  9]LogEOSSDK: LogEOSAnalytics: Start Session (User: ...)
+[2025.10.23-08.55.36:106][ 11]LogEOSSDK: LogEOS: SDK Config Product Update Request Successful, Time: 17.548843
+[2025.10.23-08.55.36:108][ 11]LogEOSSDK: LogEOS: SDK Config Data - Watermark: 1237667838
+[2025.10.23-08.55.36:108][ 11]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 17.548843, Update Interval: 340.813629
